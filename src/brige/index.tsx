@@ -57,6 +57,8 @@ export const Bridge = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setMessage1("");
+    setMessage2("");
     const source = (event.currentTarget.elements[0] as HTMLFormElement).value;
     const target = (event.currentTarget.elements[1] as HTMLFormElement).value;
     console.log(source);
